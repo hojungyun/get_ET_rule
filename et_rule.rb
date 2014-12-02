@@ -35,7 +35,7 @@ class EtQuery
     # convert ';' to ';\n    '
     str = str.gsub!(/;\s+/, ";\n" + " "*space)
     # convert ')' to '\n)'
-    str = str.sub!(/\)/, "\n\)")
+    str = str.sub!(/\)$/, "\n\)")
     str
   end
   def get_rule
